@@ -2,7 +2,7 @@
 
 > Enhancing Learning with AI-Based Focus Monitoring
 
-CogniView is an AI-powered web application that helps students and professionals stay focused during study or work sessions by monitoring facial expressions, eye movements, and attention levels in real time. Using Computer Vision and Machine Learning, the system detects drowsiness and distractions, provides instant feedback, and offers personalized productivity insights. :contentReference[oaicite:1]{index=1}
+CogniView is an AI-powered web application that helps students and professionals stay focused during study or work sessions by monitoring facial expressions, eye movements, and attention levels in real time. Using Computer Vision and Machine Learning, the system detects drowsiness and distractions, provides instant feedback, and offers personalized productivity insights. 
 
 ---
 
@@ -50,7 +50,7 @@ Students and professionals often lose concentration due to:
 - Lack of engagement
 - No real-time monitoring in existing learning platforms
 
-CogniView addresses these issues using Artificial Intelligence and Computer Vision to improve focus and learning efficiency. :contentReference[oaicite:2]{index=2}
+CogniView addresses these issues using Artificial Intelligence and Computer Vision to improve focus and learning efficiency. 
 
 ---
 
@@ -68,7 +68,7 @@ The system:
 - Generates productivity insights
 - Recommends breaks when necessary
 
-:contentReference[oaicite:3]{index=3}
+
 
 ---
 
@@ -135,7 +135,7 @@ Break Suggestions & Memory Game
 - Screen fatigue reduction
 - Better study habits
 
-:contentReference[oaicite:4]{index=4}
+
 
 ---
 
