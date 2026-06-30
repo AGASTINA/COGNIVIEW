@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogniView - AI Focus Tracking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* (Your inline CSS remains unchanged or you can move it to styles.css) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        header {
+            background: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6a5acd;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .sign-in {
+            background: #6a5acd;
+            color: #fff !important;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #d8b6ff, #a78bfa);
+            color: #fff;
+        }
+        .hero-text h3 {
+            font-size: 18px;
+        }
+        .hero-text h1 {
+            font-size: 32px;
+            margin-top: 10px;
+        }
+        .hero-text p {
+            margin: 15px 0;
+        }
+        .hero-text button {
+            padding: 10px 20px;
+            background: #6a5acd;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-section {
+            background: #b3e5fc;
+            padding: 50px;
+            text-align: center;
+        }
+        .login-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #6a5acd;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">COGNIVIEW</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#" class="sign-in">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h3>REAL-TIME FOCUS TRACKING USING AI</h3>
+                <h1>MASTER YOUR STUDY SESSIONS WITH AI-POWERED FOCUS TRACKING!</h1>
+                <p>Track your attention span, get real-time feedback, and stay productive with AI-driven insights.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='hero-image.png') }}" alt="AI Study Illustration">
+            </div>
+        </section>
+        
+        <!-- Add the webcam video feed section -->
+        <section class="video-section" style="text-align: center; padding: 30px;">
+            <h2>Live Webcam Feed</h2>
+            <img src="{{ url_for('video_feed') }}" alt="Webcam Feed" width="640" height="480">
+        </section>
+        
+
+        <section class="login-section">
+            <div class="login-container">
+                <h2>Welcome Back! Ready to Track Your Focus?</h2>
+                <form>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <div class="login-options">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login Now</button>
+                </form>
+                <div class="social-login">
+                    <p>Or Login With</p>
+                    <div class="icons">
+                        <img src="{{ url_for('static', filename='google.png') }}" alt="Google">
+                        <img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook">
+                        <img src="{{ url_for('static', filename='apple.png') }}" alt="Apple">
+                    </div>
+                </div>
+                <p>Don’t have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
